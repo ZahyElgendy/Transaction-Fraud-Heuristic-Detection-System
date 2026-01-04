@@ -208,6 +208,7 @@ The application generates:
 - `customer_risk_summary.csv` — customer risk scores and bands
 - `flagged_transactions.csv` — transaction-level fraud flags
 - `final_summary.txt` — text report summarizing risk distribution, detection performance, and financial impact
+Generated reports are saved in the `outputs/` directory.
 
 ---
 

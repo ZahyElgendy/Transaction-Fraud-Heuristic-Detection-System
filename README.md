@@ -17,7 +17,6 @@ The application:
 - Evaluates detection performance and estimates financial impact
 - Exports CSV and text-based summary reports
 
----
 
 ## Data Used
 This project uses the **Credit Card Transactions Fraud Detection Dataset** 
@@ -40,7 +39,7 @@ The dataset contains transaction timestamps, amounts, merchant information, cate
 
 > Raw CSV files are not included in this repository due to file size.
 
----
+
 
 ## Processing Pipeline (What Actually Happens)
 
@@ -70,7 +69,7 @@ Final cleaned dataset:
 - **20 columns**
 
 
----
+
 ## Data Visualization (Post-Preprocessing)
 
 After preprocessing, the system performs visual analysis on the cleaned dataset using the `DataVisualizer` class.  
@@ -111,7 +110,6 @@ The following analyses are produced:
 
 These visualizations help reveal behavioral patterns, validate risk assumptions, and support the design of downstream customer risk scoring and transaction flagging logic.
 
----
 
 ## Customer Feature Engineering
 
@@ -131,7 +129,6 @@ For each customer, the following behavioral features are computed:
 Result:
 - **999 customer-level profiles**, one per card
 
----
 
 ## Customer Risk Scoring
 
@@ -166,7 +163,6 @@ The total score determines the customer’s risk band:
 Customer risk profiles are exported to:
 - `customer_risk_summary.csv`
 
----
 
 ## Transaction Flagging
 
@@ -197,7 +193,6 @@ After running the full pipeline:
 
 This indicates that the system successfully detected nearly **three out of every four fraudulent transactions**.
 
----
 
 ## Financial Impact
 
@@ -206,7 +201,6 @@ The total transaction amount associated with correctly flagged fraud cases:
 
 This represents the estimated amount of fraudulent spending identified by the system.
 
----
 
 ## Fraud Concentration Insights
 
@@ -219,7 +213,6 @@ The most frequently flagged transaction categories were:
 
 This suggests that fraud activity is concentrated in specific transaction types rather than being uniformly distributed.
 
----
 
 ## Outputs Generated
 
@@ -232,7 +225,6 @@ The application generates:
 Generated reports are saved in the `outputs/` directory.
 
 
----
 
 ## How to Run
 

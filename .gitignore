@@ -5,3 +5,5 @@ Data/*.csv
 # python cache (do not upload)
 __pycache__/
 *.pyc
+
+outputs/flagged_transactions.csv

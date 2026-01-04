@@ -9,6 +9,8 @@ class DataVisualizer:
         self.df = df.copy()
         self.df['is_fraud'] = self.df['is_fraud'].astype(int)
 
+        self.save_dir = "outputs/images"
+
     def plot_fraud_distribution(self):
         print("Visualizing fraud distribution")
         f_counts = self.df['is_fraud'].value_counts()
@@ -17,6 +19,7 @@ class DataVisualizer:
 
         plt.pie(f_counts, labels=['Legit', 'Fraud'], autopct='%.1f%%', colors=['blue','red'])
         plt.title('Fraudulent vs Non-Fraudulent Transactions %')
+        plt.savefig(f"{self.save_dir}/fraud_dist.png")
         plt.show()
 
     def plot_amount_dist(self):
@@ -38,6 +41,7 @@ class DataVisualizer:
         plt.xlim(0, 1500)
         
         plt.tight_layout()
+        plt.savefig(f"{self.save_dir}/amount_histogram.png")
         plt.show()
 
     def plot_amount_box(self):
@@ -52,6 +56,7 @@ class DataVisualizer:
         plt.ylabel('Amount (USD)')
         plt.xlabel('Transaction status (0=Legit, 1=Fraud)')
         plt.title('Transaction amounts: Legit vs Fraud')
+        plt.savefig(f"{self.save_dir}/amount_boxplot.png")
         plt.show()
 
     def plot_monthly_count(self):
@@ -63,6 +68,7 @@ class DataVisualizer:
         plt.title('Total Transactions per Month')
         plt.xticks(rotation=45) 
         plt.ylabel('Count')
+        plt.savefig(f"{self.save_dir}/monthly_volume.png")
         plt.show()
 
     def plot_time_ratio(self):
@@ -71,6 +77,7 @@ class DataVisualizer:
         sns.countplot(data=self.df, x='trans_hour', hue='is_fraud', palette={0: 'blue', 1: 'red'})
         plt.yscale("log") # log scale for visibility
         plt.title('Hourly Transaction Patterns (Log Scale)')
+        plt.savefig(f"{self.save_dir}/time_patterns.png")
         plt.show()
         
 
@@ -88,6 +95,7 @@ class DataVisualizer:
         res.plot(kind='bar', color='red')
         plt.title('Fraud Probability (%) by Age Group')
         plt.ylabel('Fraud Rate (%)')
+        plt.savefig(f"{self.save_dir}/age_risk.png")
         plt.show()
 
     def plot_category_ratio(self):
@@ -102,6 +110,7 @@ class DataVisualizer:
         
         plt.title('Fraud Rate (%) by Category')
         plt.xlabel('Fraud Probability (%)')
+        plt.savefig(f"{self.save_dir}/category_risk.png")
         plt.show()
 
 

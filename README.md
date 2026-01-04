@@ -211,10 +211,13 @@ This suggests that fraud activity is concentrated in specific transaction types 
 ## Outputs Generated
 
 The application generates:
-- `customer_risk_summary.csv` — customer risk scores and bands
-- `flagged_transactions.csv` — transaction-level fraud flags
+- `outputs/customer_risk_summary.csv`: Customer-level risk scoring results.
+- `outputs/flagged_transactions_sample.csv`: Sample of flagged transactions.
+- The full `outputs/flagged_transactions.csv` file is generated locally but excluded from the repository due to GitHub file size limits.
 - `final_summary.txt` — text report summarizing risk distribution, detection performance, and financial impact
+
 Generated reports are saved in the `outputs/` directory.
+
 
 ---
 

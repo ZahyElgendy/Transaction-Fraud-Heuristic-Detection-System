@@ -21,6 +21,12 @@ The application:
 ---
 
 ## Data Used
+This project uses the **Credit Card Transactions Fraud Detection Dataset** 
+
+- Source: Kaggle  
+- Dataset name: *Credit Card Transactions Fraud Detection Dataset*  
+- Link: [Credit Card Transactions Fraud Detection Dataset – Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection/data)
+
 
 The system was executed on a merged dataset created from:
 - `fraudTrain.csv`

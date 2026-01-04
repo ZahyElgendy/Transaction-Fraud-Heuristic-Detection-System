@@ -1,0 +1,25 @@
+--- CUSTOMER RISK SCORING ---
+
+Risk band distribution:
+risk_band
+Low         866
+Medium      116
+High         13
+Critical      4
+
+--- TRANSACTION FLAGGING PERFORMANCE ---
+Total rows:      1852394
+Actual fraud (total fraud):    9651
+Caught fraud (true positives):    7216
+Missed cases (false negatives):    2435
+False alarms (true positives):    76061
+Detection Rate(recall):  74.77%
+Money saved:     $4,990,545.73
+
+--- TOP FLAGGED CATEGORIES ---
+category
+grocery_pos     16422
+shopping_net    13398
+shopping_pos    12046
+misc_net         9479
+misc_pos         8680

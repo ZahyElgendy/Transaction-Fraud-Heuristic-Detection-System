@@ -93,7 +93,7 @@ The figure shows the percentages distribution of legit vs. fraud transactions as
 
 ![Amount Histogram](outputs/images/amount_histogram.png)
 
-The transactions amounts that is transacted under both legit and fraud transactions, illustrating that the fraud transactions peak is located at the range between 200 and 400 (USD).
+The transactions amounts that is transacted in both legit and fraud transactions, illustrating that the fraud transactions peak is located at the range between 200 and 400 (USD).
 
 ![Amount Boxplot](outputs/images/amount_boxplot.png)
 
@@ -111,11 +111,13 @@ Looking at the Monthly amount transactions, one can deduce that transactions inc
 
 ### Age-Based Risk Analysis
 - Bar chart showing fraud probability (%) across customer age groups.
+The risk of fraud increases to age categories above 46 years old, reaching peak at ages above 75.
 
 ![Age Risk](outputs/images/age_risk.png)
 
 ### Category-Based Risk Analysis
 - Horizontal bar chart ranking transaction categories by fraud rate.
+The categories in which fraud mostly takes place is in: i) shopping_net: Online shopping transactions, ii) grocery_pos: Point-of-Sale (in-person) grocery store transactions, iii) misc_net: Miscellaneous online transactions.
 
 ![Category Risk](outputs/images/category_risk.png)
 

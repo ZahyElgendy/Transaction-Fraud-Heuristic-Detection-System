@@ -5,7 +5,7 @@ This project is a Python-based, menu-driven console application that analyzes la
 All steps are executed interactively through a command-line interface.
 
 ![Main Menu](outputs/images/Main_Menu.png)
----
+
 
 ## What This Project Does
 

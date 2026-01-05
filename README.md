@@ -85,7 +85,7 @@ The following analyses are produced:
 
 ![Fraud Distribution](outputs/images/fraud_dist.png)
 
-The figure shows the percentages distribution of fraud vs. legit transactions as would be demonstrated in real world transactions.
+The figure shows the percentages distribution of legit vs. fraud transactions as would be demonstrated in real world transactions, corresponding to 99.5% and 0.5% respectively.
 
 ### Transaction Amount Analysis
 - Side-by-side histograms comparing transaction amounts for fraud and non-fraud cases.
@@ -93,15 +93,21 @@ The figure shows the percentages distribution of fraud vs. legit transactions as
 
 ![Amount Histogram](outputs/images/amount_histogram.png)
 
+The transactions amounts that is transacted under both legit and fraud transactions, illustrating that the fraud transactions peak is located at the range between 200 and 400 (USD).
+
 ![Amount Boxplot](outputs/images/amount_boxplot.png)
+
+Similarly, the box plot is depicting the mean ranges of transaction amounts for legit and fraud transactions, showing fraud detections usually happen to amounts above 200 (USD).
 
 ### Time-Based Patterns
 - Hourly transaction frequency by fraud status (log-scaled for visibility).
 - Monthly transaction volume trends across the dataset timeline.
 
 ![Hourly Time Patterns](outputs/images/time_patterns.png)
+The hourly time pattern for fraud shows that, fraud transactions usaully occur in between the time range of 22 PM to 4 AM.
 
 ![Monthly Volume](outputs/images/monthly_volume.png)
+Looking at the Monthly amount transactions, one can deduce that transactions increase during holiday months such as December.
 
 ### Age-Based Risk Analysis
 - Bar chart showing fraud probability (%) across customer age groups.

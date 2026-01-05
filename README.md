@@ -85,6 +85,8 @@ The following analyses are produced:
 
 ![Fraud Distribution](outputs/images/fraud_dist.png)
 
+The figure shows the percentages distribution of fraud vs. legit transactions as would be demonstrated in real world transactions.
+
 ### Transaction Amount Analysis
 - Side-by-side histograms comparing transaction amounts for fraud and non-fraud cases.
 - Boxplot highlighting differences and outliers between legitimate and fraudulent transaction amounts.

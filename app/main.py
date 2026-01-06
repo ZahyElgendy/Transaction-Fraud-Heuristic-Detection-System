@@ -99,6 +99,3 @@ def main():
             print("Wrong option, try again.")
 
         input("\nPress Enter to return to menu ")
-
-if __name__ == "__main__":
-    main()
